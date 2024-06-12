@@ -1,0 +1,27 @@
+3 2
+A B C
+0 1
+A C
+1 A
+1 B
+2 B C
+1 B
+1 C
+2 B C
+
+state       sym-0       sym-1
+A           1 A           1 B
+B           2 B C         1 B
+C           1 C           2 B C
+
+state       sym-0       sym-1
+->[A] 0        [A] 0        [B] 1
+[B] 1          [B C] 2      [B] 1
+*[B C] 2      [B C] 2      [B C] 2
+
+st0     [A]
+st1     [B]
+st2    [B C]
+
+auto it=next(dfa_states.begin(),2);
+dfa_states.insert({a});

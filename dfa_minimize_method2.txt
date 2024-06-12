@@ -1,0 +1,21 @@
+/*
+                                                METHOD-02
+                                                
+    for(int i = 1; i < num_states; ++i){
+        for(int j = 0; j < i; ++j){
+            if((transition_table[i][0] == final_state and transition_table[j][0] != final_state) or (transition_table[i][0] != final_state and transition_table[j][0] == final_state)){
+                distinguishability_table[i][j] = CROSS;
+            }else if((transition_table[i][1] == final_state and transition_table[j][1] != final_state) or (transition_table[i][1] != final_state and transition_table[j][1] == final_state)){
+                distinguishability_table[i][j] = CROSS;
+            }else if((transition_table[transition_table[i][0]][0] == final_state and transition_table[transition_table[j][0]][0] != final_state) or (transition_table[transition_table[i][0]][0] != final_state and transition_table[transition_table[j][0]][0] == final_state)){
+                distinguishability_table[i][j] = CROSS;
+            }else if((transition_table[transition_table[i][0]][1] == final_state and transition_table[transition_table[j][0]][1] != final_state) or (transition_table[transition_table[i][0]][1] != final_state and transition_table[transition_table[j][0]][1] == final_state)){
+                distinguishability_table[i][j] = CROSS;
+            }else if((transition_table[transition_table[i][1]][0] == final_state and transition_table[transition_table[j][1]][0] != final_state) or (transition_table[transition_table[i][1]][0] != final_state and transition_table[transition_table[j][1]][0] == final_state)){
+                distinguishability_table[i][j] = CROSS;
+            }else if((transition_table[transition_table[i][1]][1] == final_state and transition_table[transition_table[j][1]][1] != final_state) or (transition_table[transition_table[i][1]][1] != final_state and transition_table[transition_table[j][1]][1] == final_state)){
+                distinguishability_table[i][j] = CROSS;
+            }
+        }
+    }
+*/

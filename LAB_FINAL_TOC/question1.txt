@@ -1,0 +1,10 @@
+5 2
+A B C D E
+0 1
+A B
+C B
+D B
+E B
+E E
+A E
+1001
